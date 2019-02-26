@@ -20,7 +20,7 @@ These nodes are listed as follow:
 First, clone the repository.
 
 ```bash
-git clone https://github.com/peakend/ChainEducationPrototype
+git clone https://github.com/PeaKend/ChainEducationPrototype
 ```
 
 To use the prototype, you will also need a private blockchain network running on your computer.
