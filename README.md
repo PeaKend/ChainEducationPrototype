@@ -29,7 +29,7 @@ Download and install [Ganache](https://truffleframework.com/ganache), which is a
 
 ### Configuring Ganache
 
-First, go to __settings__.
+Go to __settings__.
 
 ![FIRST IMAGE](/repoimages/1.png)
 
