@@ -63,7 +63,7 @@ You can also watch a video of me using Chain Education [here](https://www.chaine
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
 
 ## Acknowledgments
 
