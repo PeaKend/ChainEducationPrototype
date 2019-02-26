@@ -4,7 +4,7 @@ This is the prototype of my startup [Chain Education](https://www.chaineducation
 
 ## What is Chain Education?
 
-You can watch a video of what the idea behind Chain Education is [here](https://www.chaineducation.net/chaineducation.html).
+You can watch a video of what the idea behind Chain Education [here](https://www.chaineducation.net/chaineducation.html).
 
 ## How Does This Prototype Works?
 
