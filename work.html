@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Chain Education</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload" onload="testETH()">
+		<script type="text/javascript">
+			function testETH(){
+				  console.log('starting...');
+				  var Web3 = require('web3');
+				  var web3 = new Web3();
+				  web3.setProvider(new web3.providers.HttpProvider("http://localhost:7545"));
+				  var account = web3.eth.accounts[ 0 ];
+				  var balance = web3.eth.getBalance(account);
+				  console.log('account: ' + account);
+				  console.log('balance: ' + balance);
+				  document.getElementById('account').innerText = account;
+				  document.getElementById('balance').innerText = balance;
+				}
+			  </script>
+			<script type="text/javascript">
+				function send() {
+					var Web3 = require('web3');
+					var web3 = new Web3();
+					web3.setProvider(new web3.providers.HttpProvider("http://localhost:7545"));
+					var studentAccount = web3.eth.accounts[ 0 ];
+					var teacherAccount = web3.eth.accounts[ 1 ];
+					web3.eth.sendTransaction({from: studentAccount, to:teacherAccount, value: web3.toWei(1, 'ether'), gasLimit: 21000, gasPrice: 20000000000})
+				}
+			</script>
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Chain Education</a>
+				<nav>
+					<ul>
+						<li><a href="study.html">Study</a></li>
+						<li><a href="work.html" class="active">Work</a></li>
+						<li><a href="account.html">Account</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Company</th>
+											<th>Description</th>
+											<th>Payment</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Five BR</td>
+											<td><a href="fivebr.html">Make a Hello World program in C</a></td>
+											<td>2 UST</td>
+										</tr>
+										<tr>
+											<td>Elppa</td>
+											<td><a href="elppa.html">Make a Java UI</td>
+											<td>15 UST</td>
+										</tr>
+										<tr>
+											<td>Fosorcim Inc.</td>
+											<td><a href="fosorciminc.html">Make an algorithm to order an array</a></td>
+											<td>10 UST</td>
+										</tr>
+										<tr>
+											<td>Elgog AI Inc.</td>
+											<td><a href="elgogaiinc.html">Write a small AI Python script to play videogames</a></td>
+											<td>30 UST</td>
+										</tr>
+										<tr>
+											<td>E Corp</td>
+											<td><a href="ecorp.html">Make a program to destroy the world</a></td>
+											<td>20 UST</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Chain Education. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/web3.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
