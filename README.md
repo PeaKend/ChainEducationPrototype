@@ -67,6 +67,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE.m
 
 ## Acknowledgments
 
-* __MIT OCW__: 6.001 Lecture 1.
 * __HTML5 UP__: Web page template.
 
